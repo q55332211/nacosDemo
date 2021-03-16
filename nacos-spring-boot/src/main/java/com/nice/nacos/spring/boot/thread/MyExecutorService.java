@@ -18,6 +18,7 @@ public class MyExecutorService {
     @Value("${corePoolSize}")
     private static Integer corePoolSize = 10;
 
+
     private static ExecutorService executorService = Executors.newFixedThreadPool(corePoolSize, new MyThreadFactory());
 
     public ExecutorService getExecutorService() {
